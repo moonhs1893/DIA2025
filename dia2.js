@@ -4,11 +4,11 @@ import OpenAI from 'openai';
 import player from 'play-sound';
 import fs from 'fs';
 import path from 'path';
+import "dotenv/config";
 
 // --- [1] 설정 (반드시 수정하세요) ---
 const SERIAL_PORT_PATH = '/dev/cu.usbmodem21201'; // 본인의 포트 경로로 수정!
 const BAUD_RATE = 9600;
-require("dotenv").config();
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 // --- [2] 오브젝트 및 목소리 매핑 ---
